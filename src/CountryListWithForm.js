@@ -27,7 +27,7 @@ const CreateCountryForm = () => {
       region: region
     };
 
-    fetch('http://localhost:8080/api/v1/countries-parameters', {
+    fetch('https://countries-parameters.onrender.com/api/v1/countries-parameters', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

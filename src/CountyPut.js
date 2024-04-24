@@ -35,7 +35,7 @@ const UpdateCountryForm = () => {
     };
 
     axios
-    .put(`http://localhost:8080/api/v1/countries-parameters/${id}`, countryParameters)
+    .put(`https://countries-parameters.onrender.com/api/v1/countries-parameters/${id}`, countryParameters)
     .then(data => {
       setError('');
       setIsVisible(true);

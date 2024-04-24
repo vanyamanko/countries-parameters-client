@@ -4,7 +4,7 @@ const CountryList = () => {
   const [countries, setCountries] = useState([]);
 
   const getAllCountries = () => {
-    fetch('http://localhost:8080/api/v1/countries-parameters')
+    fetch('https://countries-parameters.onrender.com/api/v1/countries-parameters')
       .then(response => response.json())
       .then(data => {
         setCountries(data);

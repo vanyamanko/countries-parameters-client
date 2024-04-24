@@ -17,7 +17,7 @@ const CountryDeleteForm = () => {
 
   const handleDelete = () => {
     axios
-      .delete(`http://localhost:8080/api/v1/countries-parameters/${id}`)
+      .delete(`https://countries-parameters.onrender.com/api/v1/countries-parameters/${id}`)
       .then(response => {
         setId('');
         console.log('delete.OK');
